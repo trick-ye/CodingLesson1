@@ -16,6 +16,25 @@ fun main(args: Array<String>) {
      return "invalid input. Please enter a valid number."
  }
 
+fun calculateFactorial(num:Int?): Long? {
+    return if (num == null) {
+        null
+    } else if (num == 0 || num == 1 ) {
+        1L
+    } else {
+        var result = 1L
+        for (i in 2..num ){
+            result *= i
+
+        }
+        return result
+    }
+}
+
+
+
+
+
 
 
 
